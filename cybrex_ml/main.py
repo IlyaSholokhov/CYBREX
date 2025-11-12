@@ -176,14 +176,14 @@ st.markdown(
             Временной ряд исторических продаж
         </h1>
     </div>
-<style>
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(-20px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-</style>
-""",
-unsafe_allow_html=True)
+    <style>
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+    </style>
+    """,
+    unsafe_allow_html=True)
 fig = px.line(df, 
                 x="ds", 
                 y="sales", 
