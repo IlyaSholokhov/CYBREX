@@ -70,10 +70,6 @@ st.markdown(
     </style>
     """, unsafe_allow_html=True)
 
-# # Приветственный экран для ML-платформы
-# if st.session_state.show_main:
-# st.image("logo/logo_label.svg", use_column_width=False, width=150)
-
 with open(SVG_LOGO_PATH_1, "rb") as f:
         svg = base64.b64encode(f.read()).decode()
 st.markdown(
@@ -172,13 +168,24 @@ st.markdown(
     </style>
     """,
     unsafe_allow_html=True)
+st.markdown(
+    """
+    <p style='text-align: center; font-size: 20px;'>
+        Временной ряд исторических продаж�
+    </p>
+<style>
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+""",
+unsafe_allow_html=True)
 fig = px.line(df, 
                 x="ds", 
                 y="sales", 
-                color="sku",
-                title="Временной ряд исторических продаж")
-fig.update_layout(height=600, 
-                    title_font_size=30,
+                color="sku")
+fig.update_layout(height=600,
                     plot_bgcolor="rgba(0,0,0,0.2)",
                     paper_bgcolor="rgba(0,0,0,0)",
                     hovermode="x unified")
