@@ -74,7 +74,7 @@ st.markdown(
 # if st.session_state.show_main:
 # st.image("logo/logo_label.svg", use_column_width=False, width=150)
 
-with open("lcybrex_ml/ogo/logo_label_1.svg", "rb") as f:
+with open("cybrex_ml/ogo/logo_label_1.svg", "rb") as f:
         svg = base64.b64encode(f.read()).decode()
 st.markdown(
     f"""
