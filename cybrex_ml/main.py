@@ -151,7 +151,7 @@ df = pd.read_csv('cybrex_ml/demo_datasets/synthetic_sales.csv')
 st.dataframe(df, height=210)
 st.markdown(
     """
-        <p style='text-align: center; font-size: 20px;'>
+        <p style='text-align: center; font-size: 20px; font-weight: bold;'>
             Набор данных содержит исторические продажи за 2024 год.
             Мы использовали его для обучения модели машинного обучения и 
             получения прогноза продаж на следующий период.
