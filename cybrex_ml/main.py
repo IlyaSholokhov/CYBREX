@@ -170,9 +170,12 @@ st.markdown(
     unsafe_allow_html=True)
 st.markdown(
     """
-    <p style='text-align: center; font-size: 20px;'>
-        Временной ряд исторических продаж�
-    </p>
+    <div style='text-align: center; padding: 15px; border-radius: 15px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.1); animation: fadeIn 2s;'>
+        <h1 style='text-align: center; font-size: 20px;>
+            Временной ряд исторических продаж
+        </h1>
+    </div>
 <style>
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(-20px);}
