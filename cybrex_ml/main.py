@@ -115,7 +115,7 @@ st.markdown(
     <div style='text-align: center; padding: 15px; border-radius: 15px;
                 box-shadow: 0px 0px 10px rgba(0,0,0,0.1); animation: fadeIn 2s;'>
         <img src="data:image/svg+xml;base64,{svg}" style="display:block; margin:0 auto; animation: fadeIn 2s; transform: scale(3)">
-        <h1 style='text-align: center; font-size: 60px; margin-top: 100px'>
+        <h1 style='text-align: center; font-size: 55px; margin-top: 100px'>
             Вас приветствует CYBREX.AI
         </h1>
         <p style='text-align: center; font-size: 18px;'>
@@ -130,8 +130,8 @@ st.markdown(
     """
     <div style='text-align: center; margin-top:350px; padding: 15px; border-radius: 15px;
                 box-shadow: 0px 0px 10px rgba(0,0,0,0.1); animation: fadeIn 2s;'>
-        <h1 style='text-align: center; font-size: 60px;'>
-            ML — прогноз продаж
+        <h1 style='text-align: center; font-size: 70px;'>
+            ML: прогноз продаж
         </h1>
         <p style='text-align: center; font-size: 20px;'>
             Сервис, позволяющий оценить будущие продажи на основе исторических данных.<br>
@@ -272,7 +272,6 @@ fig.add_trace(
 )
 
 fig.update_layout(
-    height=600,
     plot_bgcolor="rgba(0,0,0,0.2)",
     paper_bgcolor="rgba(0,0,0,0)", 
 )
