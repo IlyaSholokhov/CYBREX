@@ -115,7 +115,7 @@ st.markdown(
     <div style='text-align: center; padding: 15px; border-radius: 15px;
                 box-shadow: 0px 0px 10px rgba(0,0,0,0.1); animation: fadeIn 2s;'>
         <img src="data:image/svg+xml;base64,{svg}" style="display:block; margin:0 auto; animation: fadeIn 2s; transform: scale(3)">
-        <h1 style='text-align: center; font-size: 80px; margin-top: 100px'>
+        <h1 style='text-align: center; font-size: 60px; margin-top: 100px'>
             Вас приветствует CYBREX.AI
         </h1>
         <p style='text-align: center; font-size: 18px;'>
@@ -130,7 +130,7 @@ st.markdown(
     """
     <div style='text-align: center; margin-top:350px; padding: 15px; border-radius: 15px;
                 box-shadow: 0px 0px 10px rgba(0,0,0,0.1); animation: fadeIn 2s;'>
-        <h1 style='text-align: center; font-size: 80px;'>
+        <h1 style='text-align: center; font-size: 60px;'>
             ML — прогноз продаж
         </h1>
         <p style='text-align: center; font-size: 20px;'>
@@ -225,6 +225,19 @@ st.markdown(
 grouped_df_by_day = df_fe.groupby('dayofweek').agg({'sales': 'mean'}).reset_index()
 grouped_df_by_month = df_fe.groupby('month').agg({'sales': 'mean'}).reset_index()
 
+st.markdown(
+    """
+        <p style='text-align: center; font-size: 30px; font-weight: bold;'>
+            Распределение средних продаж по дням недели и месяцам
+        </p>
+    <style>
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+    </style>
+    """,
+    unsafe_allow_html=True)
 
 fig = make_subplots(
     rows=1, cols=2,
@@ -259,8 +272,6 @@ fig.add_trace(
 )
 
 fig.update_layout(
-    title_text="Распределение средних продаж по дням недели и месяцам",
-    title_font_size=20,
     height=600,
     plot_bgcolor="rgba(0,0,0,0.2)",
     paper_bgcolor="rgba(0,0,0,0)", 
@@ -271,7 +282,7 @@ st.markdown(
     """
     <div style='text-align: center; padding: 15px; border-radius: 15px;
                 box-shadow: 0px 0px 10px rgba(0,0,0,0.1); animation: fadeIn 2s;'>
-        <h1 style='text-align: center; font-size: 60px;'>
+        <h1 style='text-align: center; font-size: 40px;'>
             Результаты моделирования
         </h1>
     </div>
