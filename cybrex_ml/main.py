@@ -16,8 +16,8 @@ import streamlit as st
 from set_logo import set_logo
 import base64
 
-SVG_LOGO_PATH = "logo/logo.svg"
-SVG_LOGO_PATH_1 = "logo/logo_label.svg"
+SVG_LOGO_PATH = "/logo/logo.svg"
+SVG_LOGO_PATH_1 = "/logo/logo_label.svg"
 
 
 set_logo(SVG_LOGO_PATH)
