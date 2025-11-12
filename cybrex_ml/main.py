@@ -17,7 +17,7 @@ from set_logo import set_logo
 import base64
 
 SVG_LOGO_PATH = "cybrex_ml/logo/logo.svg"
-SVG_LOGO_PATH_1 = "cybrex_ml/logo/logo_label.svg"
+SVG_LOGO_PATH_1 = "cybrex_ml/logo/logo_label_1.svg"
 
 
 set_logo(SVG_LOGO_PATH)
@@ -74,7 +74,7 @@ st.markdown(
 # if st.session_state.show_main:
 # st.image("logo/logo_label.svg", use_column_width=False, width=150)
 
-with open("cybrex_ml/ogo/logo_label_1.svg", "rb") as f:
+with open(SVG_LOGO_PATH_1, "rb") as f:
         svg = base64.b64encode(f.read()).decode()
 st.markdown(
     f"""
