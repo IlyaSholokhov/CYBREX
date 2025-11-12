@@ -42,7 +42,7 @@ MODEL_DIR = "models"
 
 os.makedirs(MODEL_DIR, exist_ok=True)
 
-set_background('background')
+set_background('cybrex_ml/background')
 st.markdown(
     """
     <style>
@@ -74,7 +74,7 @@ st.markdown(
 # if st.session_state.show_main:
 # st.image("logo/logo_label.svg", use_column_width=False, width=150)
 
-with open("logo/logo_label_1.svg", "rb") as f:
+with open("lcybrex_ml/ogo/logo_label_1.svg", "rb") as f:
         svg = base64.b64encode(f.read()).decode()
 st.markdown(
     f"""
