@@ -16,8 +16,8 @@ import streamlit as st
 from set_logo import set_logo
 import base64
 
-SVG_LOGO_PATH = "/logo/logo.svg"
-SVG_LOGO_PATH_1 = "/logo/logo_label.svg"
+SVG_LOGO_PATH = "cybrex_ml/logo/logo.svg"
+SVG_LOGO_PATH_1 = "cybrex_ml/logo/logo_label.svg"
 
 
 set_logo(SVG_LOGO_PATH)
@@ -152,7 +152,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-df = pd.read_csv('demo_datasets/synthetic_sales.csv')
+df = pd.read_csv('cybrex_ml/demo_datasets/synthetic_sales.csv')
 st.dataframe(df, height=210)
 st.markdown(
     """
