@@ -281,7 +281,7 @@ st.markdown(
     """
     <div style='text-align: center; padding: 15px; border-radius: 15px;
                 box-shadow: 0px 0px 10px rgba(0,0,0,0.1); animation: fadeIn 2s;'>
-        <h1 style='text-align: center; font-size: 40px;'>
+        <h1 style='text-align: center; font-size: 50px;'>
             Результаты моделирования
         </h1>
     </div>
