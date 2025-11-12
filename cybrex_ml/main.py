@@ -126,7 +126,7 @@ st.markdown(
             Комплекс решений для анализа данных.
         </p>
     </div>
-
+    <div style="height=100px"></duv>
     """,
     unsafe_allow_html=True
 )
