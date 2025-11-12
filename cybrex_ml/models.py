@@ -7,7 +7,7 @@ from prophet.diagnostics import cross_validation, performance_metrics
 import pandas as pd
 from feature_engineering import feature_engineering
 
-DATA_CSV = "demo_datasets/synthetic_sales.csv"
+DATA_CSV = "cybrex_ml/demo_datasets/synthetic_sales.csv"
 SKU = "SKU-1"
 
 def load_data(forecast_days, csv=DATA_CSV, sku=SKU, ):
