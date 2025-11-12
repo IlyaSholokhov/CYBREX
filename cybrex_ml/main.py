@@ -126,14 +126,13 @@ st.markdown(
             Комплекс решений для анализа данных.
         </p>
     </div>
-    <div style="height=350px"></duv>
     """,
     unsafe_allow_html=True
 )
 
 st.markdown(
     """
-    <div style='text-align: center; padding: 15px; border-radius: 15px;
+    <div style='text-align: center; margin-top:100px; padding: 15px; border-radius: 15px;
                 box-shadow: 0px 0px 10px rgba(0,0,0,0.1); animation: fadeIn 2s;'>
         <h1 style='text-align: center; font-size: 80px;'>
             ML — прогноз продаж
